@@ -37,8 +37,10 @@ int main() {
     //variables
     int n;
     char you, computer, result;
+
     //Generating random number between 0 to 99
     srand(time(NULL));
+
     //make randow number less than 100, divided it by 100
     n = rand() % 100;
 
@@ -52,8 +54,10 @@ int main() {
 
     printf("\n\n\n\n\t\t\t\tEnter s for STONE, p for PAPER and z for SCISSOR\n\t\t\t\t\t\t\t");
 
+    //Taking input from user
     scanf(" %c", &you);
 
+    //Function call to get the result
     result = game(you, computer);
 
     if ( result == -1) {
